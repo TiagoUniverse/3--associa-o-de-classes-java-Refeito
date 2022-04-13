@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class Index { 
     //Objeto global
     static Aluno aluno1 = new Aluno();
+    static Professor prof1 = new Professor();
     public static void main(String[] args) {
         
-        cadastroAluno();
+        //cadastroAluno();
+        Professor.teste();
         
     }
 
