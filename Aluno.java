@@ -61,6 +61,6 @@ public class Aluno{
 
     public static void exibeAluno(){
         System.out.println(" \n Resumo de cadastro");
-        System.out.println( "Nome: " + Index.aluno1.getNome());
+        System.out.println( " °Nome: " + Index.aluno1.getNome() + "\n °Sexo: " + Index.aluno1.getSexo() + "\n °Nª da matrícula: " + Index.aluno1.getMatricula() + "\n °CPF: " + Index.aluno1.getCpf()  + "\n °Nª da identidade:" + Index.aluno1.getIdentidade() + "\n °Curso: " + Index.aluno1.getCurso() );
     }
 }
