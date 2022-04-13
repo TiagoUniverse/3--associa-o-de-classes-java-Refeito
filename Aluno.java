@@ -57,7 +57,7 @@ public class Aluno{
     this.curso = curso;
     }
 
-    public void cadastro(){
+    public static void cadastro(){
         System.out.println("Bem vindo ao cadastro de aluno!");
     }
 }
