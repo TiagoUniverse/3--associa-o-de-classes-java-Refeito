@@ -59,4 +59,8 @@ public class Aluno{
     this.curso = curso;
     } 
 
+    public static void exibeAluno(){
+        System.out.println(" \n Resumo de cadastro");
+        System.out.println( "Nome: " + Index.aluno1.getNome());
+    }
 }

@@ -7,7 +7,7 @@ public class Index {
         cadastroAluno();
        
         //System.out.println(aluno1.getNome()); 
-        exibeAluno();   
+        Aluno.exibeAluno();   
     }
 
     public static void cadastroAluno(){
@@ -32,8 +32,4 @@ public class Index {
         sc.close();
     }
 
-    public static void exibeAluno(){
-        System.out.println(" \n Resumo de cadastro");
-        System.out.println( "Nome: " + Index.aluno1.getNome());
-    }
 }
