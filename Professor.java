@@ -49,5 +49,8 @@ public class Professor {
         this.identidade = identidade;
     }
 
-    
+    public static void exibeProfessor(){
+        System.out.println("\n Resumo do cadastro do professor");
+        System.out.println(" Nome: " + Index.prof1.getNome());
+    }
 }

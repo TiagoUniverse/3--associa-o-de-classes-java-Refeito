@@ -10,7 +10,7 @@ public class Index {
         
         //cadastroAluno();
         cadastroProfessor();
-        System.out.println(prof1.getNome());
+       // System.out.println(prof1.getNome());
     }
 
     public static void cadastrotiAluno(){
@@ -51,6 +51,7 @@ public class Index {
         prof1.setSexo(sc.nextLine());
 
         sc.close();
+        Professor.exibeProfessor();
     }
 
 }
