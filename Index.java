@@ -6,13 +6,14 @@ public class Index {
     public static void main(String[] args) {
         cadastroAluno();
        
-        System.out.println(aluno1.getNome());    
+        //System.out.println(aluno1.getNome()); 
+        exibeAluno();   
     }
 
     public static void cadastroAluno(){
         Scanner sc = new Scanner(System.in);
-        String analise;
-        int analiseValida;
+       // String analise;
+        //int analiseValida;
 
         System.out.println("Bem vindo ao cadastro de aluno!");
         System.out.println("1ª- Digite um nome:");
@@ -29,5 +30,10 @@ public class Index {
         aluno1.setCurso(sc.nextLine());
 
         sc.close();
+    }
+
+    public static void exibeAluno(){
+        System.out.println(" \n Resumo de cadastro");
+        System.out.println( "Nome: " + Index.aluno1.getNome());
     }
 }
