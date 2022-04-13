@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Aluno{
     private String nome;
     private String sexo;
@@ -5,12 +7,13 @@ public class Aluno{
     private String cpf;
     private String identidade;
     private String curso;
+  
 
     public Aluno(){
 
     }
 
-    public String getNome(){
+    public  String getNome(){
         return this.nome;
     }
 
@@ -57,7 +60,4 @@ public class Aluno{
     this.curso = curso;
     }
 
-    public static void cadastro(){
-        System.out.println("Bem vindo ao cadastro de aluno!");
-    }
 }
