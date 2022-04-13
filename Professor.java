@@ -49,7 +49,5 @@ public class Professor {
         this.identidade = identidade;
     }
 
-    public static void teste(){
-        System.out.println("Teste de chamamento de função do Professor!");
-    }
+    
 }

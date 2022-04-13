@@ -9,14 +9,14 @@ public class Index {
     public static void main(String[] args) {
         
         //cadastroAluno();
-        Professor.teste();
-        
+        cadastroProfessor();
+        System.out.println(prof1.getNome());
     }
 
     public static void cadastroAluno(){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Bem vindo ao cadastro de aluno!");
+        System.out.println("\n Bem vindo ao cadastro de aluno!");
         System.out.println("1ª- Digite um nome:");
         aluno1.setNome(sc.nextLine());
         System.out.println("2ª- Informe o cpf: ");
@@ -33,6 +33,17 @@ public class Index {
         sc.close();
         Aluno.exibeAluno(); 
 
+    }
+
+    public static void cadastroProfessor(){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("\n Bem vindo ao cadastro de um professor!");
+        System.out.println("1ª Digite o nome:");
+        prof1.setNome(sc.nextLine());
+
+
+        sc.close();
     }
 
 }
