@@ -1,13 +1,15 @@
+//OBJETIVO: O programa entra na função de cadastro de um objeto e no fim de sua execução, ele já executa a classe de exibição de resultados.
+// Isso pode ser alterado
 import java.util.Scanner;
 
 public class Index { 
     //Objeto global
     static Aluno aluno1 = new Aluno();
     public static void main(String[] args) {
+        
         cadastroAluno();
-       
-        //System.out.println(aluno1.getNome()); 
-        Aluno.exibeAluno();   
+    
+          
     }
 
     public static void cadastroAluno(){
@@ -30,6 +32,8 @@ public class Index {
         aluno1.setCurso(sc.nextLine());
 
         sc.close();
+        Aluno.exibeAluno(); 
+
     }
 
 }
