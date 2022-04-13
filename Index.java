@@ -1,20 +1,23 @@
 //OBJETIVO: O programa entra na função de cadastro de um objeto e no fim de sua execução, ele já executa a classe de exibição de resultados.
 // Isso pode ser alterado
+
 import java.util.Scanner;
 
 public class Index { 
     //Objeto global
     static Aluno aluno1 = new Aluno();
     static Professor prof1 = new Professor();
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         
-        //cadastroAluno();
+        cadastroAluno();
+
         cadastroProfessor();
-       // System.out.println(prof1.getNome());
+        sc.close();
     }
 
-    public static void cadastrotiAluno(){
-        Scanner sc = new Scanner(System.in);
+    public static void cadastroAluno(){
+        //Scanner sc = new Scanner(System.in);
 
         System.out.println("\n Bem vindo ao cadastro de aluno!");
         System.out.println("1ª- Digite um nome:");
@@ -30,16 +33,18 @@ public class Index {
         System.out.println("6ª- Por fim, qual é o curso deste aluno? ");
         aluno1.setCurso(sc.nextLine());
 
-        sc.close();
+        
+        //sc.close();
         Aluno.exibeAluno(); 
 
     }
 
     public static void cadastroProfessor(){
-        Scanner sc = new Scanner(System.in);
-        
+       // Scanner sc = new Scanner(System.in);
+ 
         System.out.println("\n Bem vindo ao cadastro de um professor!");
         System.out.println("1ª Digite o nome:");
+        
         prof1.setNome(sc.nextLine());
         System.out.println("2ª - Informe a sua chapa: ");
         prof1.setChapa(sc.nextLine());    
@@ -49,8 +54,8 @@ public class Index {
         prof1.setIdentidade(sc.nextLine());
         System.out.println("5ª -  Qual o sexo do professor? (masculino || feminino)");
         prof1.setSexo(sc.nextLine());
-
-        sc.close();
+    
+       // sc.close();
         Professor.exibeProfessor();
     }
 
