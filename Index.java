@@ -13,7 +13,7 @@ public class Index {
         System.out.println(prof1.getNome());
     }
 
-    public static void cadastroAluno(){
+    public static void cadastrotiAluno(){
         Scanner sc = new Scanner(System.in);
 
         System.out.println("\n Bem vindo ao cadastro de aluno!");
@@ -41,7 +41,14 @@ public class Index {
         System.out.println("\n Bem vindo ao cadastro de um professor!");
         System.out.println("1ª Digite o nome:");
         prof1.setNome(sc.nextLine());
-
+        System.out.println("2ª - Informe a sua chapa: ");
+        prof1.setChapa(sc.nextLine());    
+        System.out.println("3ª - Informe o cpf: ");
+        prof1.setCpf(sc.nextLine());
+        System.out.println("4ª - Informe o número da identidade: ");
+        prof1.setIdentidade(sc.nextLine());
+        System.out.println("5ª -  Qual o sexo do professor? (masculino || feminino)");
+        prof1.setSexo(sc.nextLine());
 
         sc.close();
     }
