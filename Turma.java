@@ -49,7 +49,8 @@ public class Turma {
         this.disponivel = disponivel;
     }
 
-    public static void teste(){
-        System.out.println("Testee");
-    }
+   public static void exibeTurma(){
+       System.out.println("\n Resumo do cadastro de turma");
+       System.out.println(" Disciplina: " +Index.turma1.getDisciplina() );
+   }
 }
