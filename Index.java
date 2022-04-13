@@ -17,7 +17,6 @@ public class Index {
     }
 
     public static void cadastroAluno(){
-        //Scanner sc = new Scanner(System.in);
 
         System.out.println("\n Bem vindo ao cadastro de aluno!");
         System.out.println("1ª- Digite um nome:");
@@ -33,14 +32,11 @@ public class Index {
         System.out.println("6ª- Por fim, qual é o curso deste aluno? ");
         aluno1.setCurso(sc.nextLine());
 
-        
-        //sc.close();
         Aluno.exibeAluno(); 
 
     }
 
     public static void cadastroProfessor(){
-       // Scanner sc = new Scanner(System.in);
  
         System.out.println("\n Bem vindo ao cadastro de um professor!");
         System.out.println("1ª Digite o nome:");
@@ -55,7 +51,6 @@ public class Index {
         System.out.println("5ª -  Qual o sexo do professor? (masculino || feminino)");
         prof1.setSexo(sc.nextLine());
     
-       // sc.close();
         Professor.exibeProfessor();
     }
 

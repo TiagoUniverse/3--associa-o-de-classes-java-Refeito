@@ -51,6 +51,7 @@ public class Professor {
 
     public static void exibeProfessor(){
         System.out.println("\n Resumo do cadastro do professor");
-        System.out.println(" Nome: " + Index.prof1.getNome());
-    }
+        System.out.println(" Nome: " + Index.prof1.getNome() + "\n Sexo: " + Index.prof1.getSexo() + "\n Chapa: " + Index.prof1.getChapa() + "\n CPF: " + Index.prof1.getCpf() + "\n Nª de identidade: "  + Index.prof1.getIdentidade() );
+
+    } 
 }
