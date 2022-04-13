@@ -56,4 +56,8 @@ public class Aluno{
     public void setCurso (String curso){
     this.curso = curso;
     }
+
+    public void cadastro(){
+        System.out.println("Bem vindo ao cadastro de aluno!");
+    }
 }
